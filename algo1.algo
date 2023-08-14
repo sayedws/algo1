@@ -1,0 +1,23 @@
+ALGORITHM ALGO_ONE
+VAR
+    s:STRING;
+    NumberOfCharacters:INTEGER =1;
+    NumberOfWords:INTEGER =1;
+    NumberOfVowels:INTEGER =0;
+    i:INTEGER
+BEGIN
+    WHILE (s[i]<>".") DO
+        i:=i+1
+        // i++
+        NumberOfCharacters++
+        IF (s[i]=" ") THEN
+            NumberOfWords++
+        END_IF
+        IF (s[i]="a" OR s[i]="e" OR s[i]="u" OR s[i]="i" s[i]="o" s[i]="A" OR s[i]="E" OR s[i]="U" OR s[i]="I" OR s[i]="O") THEN
+            NumberOfVowels++
+        END_IF
+    END_WHILE
+    Write("Number of vowels:",NumberOfVowels)
+    Write("Number of words:",NumberOfWords)
+    Write("Number of characters:",NumberOfCharacters)
+END
